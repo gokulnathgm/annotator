@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eXegesis</title>
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="login-logo">
+      <img src="{% static "logo_main.png" %}">
+    </div>
+    <div class="login">
+      <a href="{% url 'social:begin' 'google-oauth2' %}?next=/exegesis/projects"><img src="{% static "google_btn.png" %}"></a>
+    </div>
+  </div>
+
+</body>
+</html>
