@@ -138,6 +138,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'exegesis', 'static')
 STATIC_URL = '/exegesis/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'exegesis', 'templates', 'uploads')
+MEDIA_URL = '/exegesis/uploads/'
+
 LOGIN_URL = LOGIN_URL
 LOGIN_REDIRECT_URL = LOGIN_REDIRECT_URL
 

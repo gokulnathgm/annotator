@@ -1,0 +1,507 @@
+/*@font-face {
+  font-family: 'Gotham';
+  src: url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.eot");
+  src: url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.eot?#iefix") format("embedded-opentype"),
+  url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.woff2") format("woff2"),
+  url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.woff") format("woff"),
+  url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.ttf") format("truetype"),
+  url("http://db.onlinewebfonts.com/t/d547aef890f72e341f3398e358ef6610.svg#Gotham") format("svg");
+  font-weight: 500;
+}*/
+
+@font-face {
+font-family: Gotham;
+src: url('GOTHAMHTF-BOOK_0.OTF');
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+.navbar {
+  font-family: Gotham;
+  color: #ffffff;
+}
+
+.modal {
+  font-family: Gotham;
+}
+
+.btn {
+  outline: none !important;
+}
+.li-drop:hover {
+  background-color: #ffbd36;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #ffbd36;
+}
+.dropdown-menu>li>a:focus {
+  background-color: #ffbd36;
+}
+
+.btn-primary.outline {
+  background-color: #fd3c16;
+}
+
+.create-project{
+  font-family: Gotham;
+  background-color: #fd3c16;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #ffffff;
+  margin: auto;
+  display: table;
+  margin-top: 85px;
+  width: 350px;
+  height: 75px;
+  outline: none !important;
+}
+
+/*.btn-warning {
+  background-color: #ffbd36;
+  height: 58px;
+  width: 240px;
+}
+*/
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.create {
+  background-color: #fd3c16;
+  border-radius: 38px;
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  color: #ffffff;
+  outline: none !important;
+}
+
+.cancel {
+  background-color: #c8c8c8;
+  border-radius: 38px;
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  color: #a6a3a3;
+}
+
+.modal-title {
+  color: #fd3c16
+}
+
+.glyphicon-cog {
+  font-size: 30px;
+}
+
+.annotate {
+  font-family: Gotham;
+  font-size: 14px;
+  height: 650px;
+  overflow: auto;
+}
+
+div.annotate li {
+  background: #ffffff;
+}
+div.annotate li:nth-child(odd) { 
+  background: #f4f4f4; 
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
+
+.navbar-inverse {
+  margin-bottom: 0;
+  background-color: #fb6946;
+}
+
+.navbar-header {
+  display: inline-block;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.svg-nav {
+  margin: auto;
+  display: table;
+}
+
+.login {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.login-logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  left: 1%;
+  top: 6%;
+}
+
+.proj {
+  margin: auto;
+  display: table;
+  margin-top: 85px;
+  width: 350px;
+  height: 75px;
+  outline: none;
+}
+
+.text {
+  width:50%;
+}
+
+.modal-div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+.desc {
+  margin-top:20px;
+}
+
+.create-btn {
+  text-align:center;
+}
+
+.proj-list {
+  font-family: Gotham;
+  margin-top: 50px;
+}
+
+.proj-div {
+  padding-bottom:15px;
+}
+
+.proj-frame {
+  height: 255px;
+  width: 250px;
+  border: 1px solid;
+  border-color: #a6a3a3;
+  position: relative;
+  margin: auto;
+  padding: 5px, 0px;
+}
+
+.no-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.no-link:hover {
+  text-decoration: none;
+}
+
+.no-link:active {
+  text-decoration: none;
+}
+
+.no-link:focus {
+  text-decoration: none;
+}
+.thumb-img {
+  height: 127px;
+  width: 248px;
+}
+
+.thumb-caption {
+  height: 127px;
+  width: 248px;
+  padding-left: 17px;
+  padding-top: 23px;
+  text-decoration: none;
+}
+
+.proj-name {
+  font-size: 16px;
+  color: #fb6946;
+}
+
+.proj-caption {
+  font-size: 10px;
+  color: #000000;
+}
+
+.proj-drop {
+  position: absolute;
+  top: 135px;
+  right: 10px;
+}
+
+.drop-btn {
+  border-radius: 50%;
+  background-color: #fb6946;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  outline: none !important;
+}
+
+.cog-style {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 5px;
+  position: absolute;
+  left: 28%;
+  top: 14%;
+}
+
+.drop {
+  right: 0;
+  left: inherit;
+}
+
+.div-share {
+  font-family: Gotham;
+  margin-top: 10px;
+}
+
+.div-upload {
+  margin-top: 30px;
+  visibility: hidden;
+}
+
+.main-container {
+  font-family: Gotham;
+  padding: 0px 20px;
+}
+
+.head-left {
+  margin-top: 28px;
+  padding-left: 40px;
+  font-size: 10px;
+  color: #000000;
+}
+
+.search-filter {
+  font-size: 12px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.head-center {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.btn-dash {
+  background-color: #ffbd36;
+  color:black; font-size: 25px;
+  height: 50px;
+  width: 240px;
+  border-color: transparent;
+}
+
+.btn-style {
+  font-size: 25px;
+  background-color: #ffffff;
+  border: none;
+  display: none;
+}
+
+.head-right {
+  margin-top: 25px;
+  text-align: right;
+  padding-right: 40px;
+  position: relative;
+}
+
+.search-screen {
+  background-color: #fbc8bc;
+  width: 175px;
+  text-align: center;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15%;
+  top: 2%;
+}
+
+.div-owner {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.btn-members {
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding: 10px 0px;
+  font-size: 9px;
+}
+
+.btn-share {
+  background-color: #ffbd36;
+  color: black;
+  height: 30px;
+  width: 125px;
+  font-size: 16px;
+  border-color: transparent;
+}
+
+.arts {
+  padding-top: 20px;
+}
+
+.art-outline {
+  text-align: center;
+  padding: 15px;
+}
+
+.art-frame {
+  height: 255px;
+  width: 250px;
+  margin: auto;
+  position: relative;
+}
+
+.art-thumb {
+  height: 255px;
+  width: 250px;
+  position: relative;
+}
+
+.art-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+.art-name {
+  width: 98%;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.art-drop {
+  position: absolute;
+  top: 0%;
+  right: 4%;
+}
+
+.btn-art-drop {
+  margin-left: 225px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #fb6946;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  outline: none !important;
+}
+
+.cog-style-art {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 5px;
+  position: absolute;
+  left: 28%;
+  top: 14%;
+}
+
+.art-drop-menu {
+  right: 0;
+  left: inherit;
+}
+.art-loc {
+  display: none;
+}
+
+.art-update {
+  visibility: hidden;
+}
+
+.head-index {
+  font-family: Gotham;
+  font-size: 18px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.div-main {
+  margin-top:25px;
+}
+
+.div-image {
+  overflow: auto;
+  width: 47%;
+  height: 100vh;
+}
+
+.foot-left {
+  font-family: Gotham;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.write-note {
+  font-family: Gotham;
+  position: fixed;
+  bottom: 10px;
+  right: 400px;
+}
+
+.view-note {
+  font-family: Gotham;
+  position: fixed;
+  bottom: 10px;
+  right: 450px;
+}
+
+.share-btn {
+  padding: 0px;
+}
+
+.name {
+  color: #ffffff;
+}

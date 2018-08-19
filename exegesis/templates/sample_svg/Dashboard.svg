@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="28.5" cy="28.5" r="28.5"></circle>
+        <rect id="path-3" x="0" y="0" width="311.111111" height="70" rx="35"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="311.111111" height="70" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard">
+            <rect id="Rectangle" fill="#1BA8DD" x="0" y="0" width="1440" height="75"></rect>
+            <rect id="Rectangle-Copy" fill="#148EBB" x="0" y="983" width="1440" height="75"></rect>
+            <g id="Group-6" transform="translate(57.000000, 9.000000)">
+                <text id="testmate" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" font-size="50" font-weight="200" line-spacing="50" letter-spacing="-0.0740740746" fill="#F9F9F9">
+                    <tspan x="43" y="53.0253906">test</tspan>
+                    <tspan x="113.211516" y="52" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal">mate</tspan>
+                </text>
+                <g id="Group-17" transform="translate(0.000000, 25.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle-3" x="0" y="0" width="29" height="4" rx="2"></rect>
+                    <rect id="Rectangle-3-Copy" x="0" y="6.5" width="29" height="4" rx="2"></rect>
+                    <rect id="Rectangle-3-Copy-2" x="0" y="13" width="29" height="4" rx="2"></rect>
+                </g>
+                <g id="Shape" transform="translate(1256.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <path d="M34.3623881,35.9618389 C39.118952,33.4861925 41.5683731,28.0810328 40.2940419,22.8724048 C39.0197106,17.6637768 34.3515038,14 28.9892537,14 C23.6270036,14 18.9587969,17.6637768 17.6844656,22.8724048 C16.4101343,28.0810328 18.8595554,33.4861925 23.6161194,35.9618389 C16.1090884,38.3257833 11.0024446,45.2854341 11,53.1558687 C11,53.7493688 11.4811268,54.2304956 12.0746269,54.2304956 C12.6681269,54.2304956 13.1492537,53.7493688 13.1492537,53.1558687 C13.1492537,44.4017433 20.2458746,37.3051225 29,37.3051225 C37.7541254,37.3051225 44.8507463,44.4017433 44.8507463,53.1558687 C44.8507463,53.7493688 45.3318731,54.2304956 45.9253731,54.2304956 C46.5188732,54.2304956 47,53.7493688 47,53.1558687 C46.9946034,45.2796123 41.8779236,38.3181432 34.3623881,35.9618389 Z M19.5002985,25.6507941 C19.5002985,20.4101889 23.7486485,16.1618389 28.9892537,16.1618389 C34.229859,16.1618389 38.478209,20.4101889 38.478209,25.6507941 C38.478209,30.8913994 34.229859,35.1397493 28.9892537,35.1397493 C23.7511035,35.1338272 19.5062207,30.8889444 19.5002985,25.6507941 L19.5002985,25.6507941 Z" fill="#999999" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+            <g id="Group" transform="translate(506.000000, 88.000000)" font-size="50" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" letter-spacing="-0.0740740746" font-weight="200">
+                <text id="Welcome-to-testmate">
+                    <tspan x="0.565845653" y="48" fill="#A5A6A9">Welcome to</tspan>
+                    <tspan x="237.886628" y="48" letter-spacing="-0.092592597" fill="#404143"> </tspan>
+                    <tspan x="247.095794" y="48" letter-spacing="-0.092592597" fill="#131314">test</tspan>
+                    <tspan x="319.137533" y="48" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal" letter-spacing="-0.092592597" fill="#1BA7DC">mate</tspan>
+                </text>
+            </g>
+            <g id="Group-5" transform="translate(305.000000, 169.000000)">
+                <g id="Group-4">
+                    <text id="8" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" font-size="96" font-weight="200" letter-spacing="-0.106666669" fill="#747576">
+                        <tspan x="39.4439583" y="93">8</tspan>
+                    </text>
+                    <text id="PROJECTS" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="30" font-style="condensed" font-weight="300" letter-spacing="-0.0833333358" fill="#000000">
+                        <tspan x="0.00911459327" y="127">PROJECTS</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy" transform="translate(324.000000, 0.000000)">
+                    <text id="36" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" font-size="96" font-weight="200" letter-spacing="-0.106666669" fill="#747576">
+                        <tspan x="26.3879167" y="93">36</tspan>
+                    </text>
+                    <text id="TEST-SUITES" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="30" font-style="condensed" font-weight="300" letter-spacing="-0.0833333358" fill="#000000">
+                        <tspan x="0.521809909" y="127">TEST SUITES</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-2" transform="translate(674.000000, 0.000000)">
+                    <text id="104" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" font-size="96" font-weight="200" letter-spacing="-0.106666669" fill="#747576">
+                        <tspan x="5.269375" y="93">104</tspan>
+                    </text>
+                    <text id="TEST-CASES" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="30" font-style="condensed" font-weight="300" letter-spacing="-0.0833333358" fill="#000000">
+                        <tspan x="0.384440117" y="127">TEST CASES</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-3" transform="translate(564.000000, 355.000000)">
+                <g id="Group-2">
+                    <use id="Rectangle-2" stroke="#1BA8DD" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                    <text id="Create-Project" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="30" font-weight="normal" letter-spacing="-0.0311111137" fill="#1BA8DD">
+                        <tspan x="68.0523893" y="47">Create</tspan>
+                        <tspan x="153.383301" y="47" font-family=".HelveticaNeueDeskInterface-UltraLightP2, SFNS Display" font-weight="200" letter-spacing="-0.0233333353"> </tspan>
+                        <tspan x="158.941022" y="47" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-style="condensed" font-weight="300" letter-spacing="-0.0233333353">Project</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-13" transform="translate(70.000000, 456.000000)">
+                <g id="Group-9" transform="translate(1055.000000, 12.000000)"></g>
+                <g id="Group-10" transform="translate(1188.000000, 12.000000)"></g>
+                <g id="Group-12">
+                    <rect id="Rectangle-14" fill="#ECECEC" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                    <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                        <tspan x="267" y="25">Lorem Ipsum is simply dummy text of the printing </tspan>
+                        <tspan x="267" y="42">and typesetting industry. Lorem Ipsum has been </tspan>
+                        <tspan x="267" y="59">the industry's standard dummy text ever…</tspan>
+                    </text>
+                    <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                        <text id="Project-one" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="0" y="24">Project one</tspan>
+                        </text>
+                        <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Created:</tspan>
+                            <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                            <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                        <text id="11" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="32" y="24">11</tspan>
+                        </text>
+                        <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Test Suites</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                        <text id="32" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="31.258427" y="24">32</tspan>
+                        </text>
+                        <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Test Cases</tspan>
+                        </text>
+                    </g>
+                    <text id="28" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                        <tspan x="1000" y="36">28</tspan>
+                    </text>
+                    <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                        <tspan x="985" y="59">Passed</tspan>
+                    </text>
+                    <g id="Group-14" transform="translate(1148.000000, 12.000000)" fill="#FF0000">
+                        <text id="4" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336">
+                            <tspan x="17" y="24">4</tspan>
+                        </text>
+                        <text id="Failed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763">
+                            <tspan x="0" y="47">Failed</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-13-Copy" transform="translate(70.000000, 764.000000)">
+                <g id="Group-9" transform="translate(1055.000000, 12.000000)"></g>
+                <g id="Group-10" transform="translate(1188.000000, 12.000000)"></g>
+                <g id="Group-12">
+                    <rect id="Rectangle-14" fill="#ECECEC" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                    <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                        <tspan x="268" y="25">Lorem Ipsum is simply dummy text of the printing </tspan>
+                        <tspan x="268" y="42">and typesetting industry. Lorem Ipsum has been </tspan>
+                        <tspan x="268" y="59">the industry's standard dummy text ever…</tspan>
+                    </text>
+                    <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                        <text id="Project-five" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="0" y="24">Project five</tspan>
+                        </text>
+                        <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Created:</tspan>
+                            <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                            <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                        <text id="19" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="31" y="24">19</tspan>
+                        </text>
+                        <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Test Suites</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                        <text id="65" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                            <tspan x="29" y="24">65</tspan>
+                        </text>
+                        <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                            <tspan x="0" y="47">Test Cases</tspan>
+                        </text>
+                    </g>
+                    <text id="62" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                        <tspan x="1000" y="36">62</tspan>
+                    </text>
+                    <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                        <tspan x="985" y="59">Passed</tspan>
+                    </text>
+                    <text id="3" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#FF0000">
+                        <tspan x="1165" y="36">3</tspan>
+                    </text>
+                    <text id="Failed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#FF0000">
+                        <tspan x="1148" y="59">Failed</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-12-Copy-2" transform="translate(70.000000, 610.000000)">
+                <rect id="Rectangle-14" fill="#ECECEC" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                    <tspan x="267" y="26">Lorem Ipsum is simply dummy text of the printing </tspan>
+                    <tspan x="267" y="43">and typesetting industry. Lorem Ipsum has been </tspan>
+                    <tspan x="267" y="60">the industry's standard dummy text ever…</tspan>
+                </text>
+                <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                    <text id="Project-three" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="0" y="24">Project three</tspan>
+                    </text>
+                    <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Created:</tspan>
+                        <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                        <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                    <text id="6" opacity="0.600000024" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="32" y="24">6</tspan>
+                    </text>
+                    <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Suites</tspan>
+                    </text>
+                </g>
+                <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                    <text id="18" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="29" y="24">18</tspan>
+                    </text>
+                    <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Cases</tspan>
+                    </text>
+                </g>
+                <text id="16" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                    <tspan x="1002" y="36">16</tspan>
+                </text>
+                <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                    <tspan x="985" y="59">Passed</tspan>
+                </text>
+                <text id="2" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#FF0000">
+                    <tspan x="1165" y="36">2</tspan>
+                </text>
+                <text id="Failed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#FF0000">
+                    <tspan x="1148" y="59">Failed</tspan>
+                </text>
+            </g>
+            <g id="Group-12-Copy" transform="translate(70.000000, 533.000000)">
+                <rect id="Rectangle-14" fill="#F3F3F3" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                    <text id="Project-two" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="0" y="24">Project two</tspan>
+                    </text>
+                    <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Created:</tspan>
+                        <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                        <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                    <text id="3" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="32" y="24">3</tspan>
+                    </text>
+                    <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Suites</tspan>
+                    </text>
+                </g>
+                <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                    <text id="11" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="29" y="24">11</tspan>
+                    </text>
+                    <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Cases</tspan>
+                    </text>
+                </g>
+                <text id="8" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                    <tspan x="1008" y="36">8</tspan>
+                </text>
+                <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                    <tspan x="985" y="59">Passed</tspan>
+                </text>
+                <g id="Group-16" transform="translate(1148.000000, 12.000000)" fill="#FF0000">
+                    <text id="3" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336">
+                        <tspan x="17" y="24">3</tspan>
+                    </text>
+                    <g id="Group-15" transform="translate(0.000000, 28.000000)" font-weight="300" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" letter-spacing="-0.0177777763" font-size="20" font-style="condensed">
+                        <text id="Failed">
+                            <tspan x="0" y="19">Failed</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                    <tspan x="267" y="26">Lorem Ipsum is simply dummy text of the printing </tspan>
+                    <tspan x="267" y="43">and typesetting industry. Lorem Ipsum has been </tspan>
+                    <tspan x="267" y="60">the industry's standard dummy text ever…</tspan>
+                </text>
+            </g>
+            <g id="Group-12-Copy-5" transform="translate(70.000000, 841.000000)">
+                <rect id="Rectangle-14" fill="#F3F3F3" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                    <text id="Project-six" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="0" y="24">Project six</tspan>
+                    </text>
+                    <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Created:</tspan>
+                        <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                        <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                    <text id="3" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="32" y="24">3</tspan>
+                    </text>
+                    <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Suites</tspan>
+                    </text>
+                </g>
+                <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                    <text id="11" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="29" y="24">11</tspan>
+                    </text>
+                    <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Cases</tspan>
+                    </text>
+                </g>
+                <text id="8" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                    <tspan x="1008" y="36">8</tspan>
+                </text>
+                <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                    <tspan x="985" y="59">Passed</tspan>
+                </text>
+                <text id="3" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#FF0000">
+                    <tspan x="1165" y="36">3</tspan>
+                </text>
+                <text id="Failed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#FF0000">
+                    <tspan x="1148" y="59">Failed</tspan>
+                </text>
+                <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                    <tspan x="270" y="26">Lorem Ipsum is simply dummy text of the printing </tspan>
+                    <tspan x="270" y="43">and typesetting industry. Lorem Ipsum has been </tspan>
+                    <tspan x="270" y="60">the industry's standard dummy text ever…</tspan>
+                </text>
+            </g>
+            <g id="Group-12-Copy-3" transform="translate(70.000000, 687.000000)">
+                <rect id="Rectangle-14" fill="#F3F3F3" x="0" y="0" width="1300" height="75" rx="6"></rect>
+                <g id="Group-11" transform="translate(19.000000, 13.000000)">
+                    <text id="Project-four" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="0" y="24">Project four</tspan>
+                    </text>
+                    <text id="Created:-17-Feb,-201" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="12" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Created:</tspan>
+                        <tspan x="41.7757465" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-weight="normal"> </tspan>
+                        <tspan x="44.6290625" y="47" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="10" font-weight="normal">17 Feb, 2017 | 04:30:27 PM</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(633.000000, 12.000000)">
+                    <text id="11" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="32" y="24">11</tspan>
+                    </text>
+                    <text id="Test-Suites" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Suites</tspan>
+                    </text>
+                </g>
+                <g id="Group-8" transform="translate(807.000000, 12.000000)">
+                    <text id="26" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#000000">
+                        <tspan x="29" y="24">26</tspan>
+                    </text>
+                    <text id="Test-Cases" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#464444">
+                        <tspan x="0" y="47">Test Cases</tspan>
+                    </text>
+                </g>
+                <text id="20" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#168819">
+                    <tspan x="1000" y="36">20</tspan>
+                </text>
+                <text id="Passed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#168819">
+                    <tspan x="985" y="59">Passed</tspan>
+                </text>
+                <text id="6" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="25" font-weight="normal" letter-spacing="-0.0370370336" fill="#FF0000">
+                    <tspan x="1165" y="36">6</tspan>
+                </text>
+                <text id="Failed" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="20" font-style="condensed" font-weight="300" letter-spacing="-0.0177777763" fill="#FF0000">
+                    <tspan x="1148" y="59">Failed</tspan>
+                </text>
+                <text id="Lorem-Ipsum-is-simpl" font-family=".HelveticaNeueDeskInterface-Thin, SFNS Display" font-size="14" font-style="condensed" font-weight="300" letter-spacing="-0.0576131679" fill="#4E4E4E">
+                    <tspan x="267" y="25">Lorem Ipsum is simply dummy text of the printing </tspan>
+                    <tspan x="267" y="42">and typesetting industry. Lorem Ipsum has been </tspan>
+                    <tspan x="267" y="59">the industry's standard dummy text ever…</tspan>
+                </text>
+            </g>
+            <text id="Copyright-2017-|-QBu" font-family=".HelveticaNeueDeskInterface-Regular, SFNS Display" font-size="12" font-weight="normal" letter-spacing="-0.0311111137" fill="#FFFFFF">
+                <tspan x="658.216176" y="1008">Copyright 2017 | QBurst</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
