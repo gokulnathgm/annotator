@@ -2,169 +2,182 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>eXegesis</title>
-  <link rel="stylesheet" type="text/css" href="{% static "paper.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
-  <script type="text/javascript" src="{% static "jquery_3_1_1.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "bootstrap_3_3_7.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "script.js" %}"></script>
+    <title>eXegesis</title>
+    <link rel="stylesheet" type="text/css" href="{% static "paper.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type="text/javascript" src="{% static "jquery_3_1_1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "bootstrap_3_3_7.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "script.js" %}"></script>
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid svg-nav">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/exegesis/projects">
-          <div class="logo"><img src="{% static "logo.png" %}"></div>
-          <div class="name">Projects</div>
-        </a>
-      </div>    
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/exegesis/projects">
+                <div class="logo"><img src="{% static "logo.png" %}"></div>
+                <div class="name">Projects</div>
+            </a>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <div class="container" >
-    <button type="button" class="btn btn-default create-project"  data-toggle="modal" data-target="#myModal">CREATE PROJECT</button>
+<div class="container">
+    <button type="button" class="btn btn-default create-project" data-toggle="modal" data-target="#myModal">CREATE
+        PROJECT
+    </button>
 
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title" id="header">New Project</h4>
-          </div>
-          <div class="modal-body">
-            <form class = "form-main-class" action="/exegesis/create_project/" method="post" id="create-update">
-              {% csrf_token %}
-              <div>
-                <input class="input-class text" type="text" id="project-name" name="project-name" placeholder="Project Name" required />
-              </div>
-              <div class="modal-div">
-                <label class="radio-inline">
-                  <input type="radio" name="screen" value="android" onclick="displayDiv('android')" required>Android
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="screen" value="ios" onclick="displayDiv('ios')">iOS
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="screen" value="web" onclick="displayDiv('web')">Web
-                </label>
-              </div>
-              <div id="ios" class="modal-div none">
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="1x">1x
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="2x">2x
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="3x">3x
-                </label>
-              </div>
-              <div id="android" class="modal-div none">
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="mdpi">mdpi
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="hdpi">hdpi
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="xhdpi">xhdpi
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="xxhdpi">xxhdpi
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="xxxhdpi">xxxhdpi
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="density" value="xxxxhdpi">xxxxhdpi
-                </label>
-              </div>
-              <div id="web" class="none">
-              </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="header">New Project</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-main-class" action="/exegesis/create_project/" method="post" id="create-update">
+                        {% csrf_token %}
+                        <div>
+                            <input class="input-class text" type="text" id="project-name" name="project-name"
+                                   placeholder="Project Name" required/>
+                        </div>
+                        <div class="modal-div">
+                            <label class="radio-inline">
+                                <input type="radio" name="screen" value="android" onclick="displayDiv('android')"
+                                       required>Android
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="screen" value="ios" onclick="displayDiv('ios')">iOS
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="screen" value="web" onclick="displayDiv('web')">Web
+                            </label>
+                        </div>
+                        <div id="ios" class="modal-div none">
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="1x">1x
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="2x">2x
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="3x">3x
+                            </label>
+                        </div>
+                        <div id="android" class="modal-div none">
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="mdpi">mdpi
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="hdpi">hdpi
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="xhdpi">xhdpi
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="xxhdpi">xxhdpi
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="xxxhdpi">xxxhdpi
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="density" value="xxxxhdpi">xxxxhdpi
+                            </label>
+                        </div>
+                        <div id="web" class="none">
+                        </div>
 
-              <div class="desc">
-                <input class="input-class text" type="text" id="project-description" name="project-description" placeholder="Project Description" required />
-              </div>
-            </div>
+                        <div class="desc">
+                            <input class="input-class text" type="text" id="project-description"
+                                   name="project-description" placeholder="Project Description" required/>
+                        </div>
+                </div>
 
-            <div class="modal-footer">
-              <div class="col-sm-12 create-btn">
-                <button  class="btn btn-default create" type="submit" id="modal-btn">Create</button>
-              </div>
+                <div class="modal-footer">
+                    <div class="col-sm-12 create-btn">
+                        <button class="btn btn-default create" type="submit" id="modal-btn">Create</button>
+                    </div>
+                </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <div class="proj-list">
+<div class="proj-list">
     {% if projects %}
-    {% for project in projects %}
-    <div class="col-md-3" class="proj-div">
-      <div class="proj-frame">
-        <a class="no-link" href="/exegesis/artboards?project={{project.uuid}}">
-          <div style="background-image:url(/exegesis/{{ project.thumbnail }}), url('/exegesis/static/project.jpg')" class="thumb-img">
-          </div>
-          <div class="caption thumb-caption">
-            <div class="proj-name">{{ project.name }}</div>
-            <div class="proj-caption">Type: {{ project.screen }}, Density: {{ project.density }}</div>
-            <div class="proj-caption">Created: {{ project.created }}</div>
-            <div class="proj-caption">Last updated: {{ project.last_updated }}</div>
-          </div>
-        </a>
+        {% for project in projects %}
+            <div class="col-md-3" class="proj-div">
+                <div class="proj-frame">
+                    <a class="no-link" href="/exegesis/artboards?project={{ project.uuid }}">
+                        <div style="background-image:url(/exegesis/{{ project.thumbnail }}), url('/exegesis/static/project.jpg')"
+                             class="thumb-img">
+                        </div>
+                        <div class="caption thumb-caption">
+                            <div class="proj-name">{{ project.name }}</div>
+                            <div class="proj-caption">Type: {{ project.screen }}, Density: {{ project.density }}</div>
+                            <div class="proj-caption">Created: {{ project.created }}</div>
+                            <div class="proj-caption">Last updated: {{ project.last_updated }}</div>
+                        </div>
+                    </a>
 
-        <div class="dropdown proj-drop">
-          <button class="btn dropdown-toggle drop-btn" type="button" data-toggle="dropdown">
-            <span class="glyphicon glyphicon-cog cog-style">
-            </span>
-          </button>
-          <ul class="dropdown-menu inline drop">
-            <li class="li-drop"> <a href="#" class="li-drop" data-toggle="modal" data-target="#{{ project.name }}">SHARE</a></li>
-            <li class="li-drop"><a href="#" class="li-drop" onclick="update('{{project.uuid}}');">UPDATE</a></li>
-            <li class="li-drop"><a href="/exegesis/delete_project?project={{ project.uuid }}" class="li-drop">DELETE</a></li>
-          </ul>
-        </div>
-      </div>
+                    <div class="dropdown proj-drop">
+                        <button class="btn dropdown-toggle drop-btn" type="button" data-toggle="dropdown">
+                            <i class="fas fa-cog cog-style"></i>
+                        </button>
+                        <ul class="dropdown-menu inline drop">
+                            <li class="li-drop"><a href="#" class="li-drop" data-toggle="modal"
+                                                   data-target="#{{ project.name }}">SHARE</a></li>
+                            <li class="li-drop"><a href="#" class="li-drop" onclick="update('{{ project.uuid }}');">UPDATE</a>
+                            </li>
+                            <li class="li-drop"><a href="/exegesis/delete_project?project={{ project.uuid }}"
+                                                   class="li-drop">DELETE</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-      <div class="modal fade" id="{{ project.name }}" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Choose Sharing options</h4>
+                <div class="modal fade" id="{{ project.name }}" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Choose Sharing options</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-main-class" action="/exegesis/share_project/" method="post">
+                                    {% csrf_token %}
+                                    <div class="div-share">
+                                        <input class="input-class text" type="text" id="email" name="email"
+                                               placeholder="Email ID" required=""/><br>
+                                    </div>
+                                    <div class="div-share none">
+                                        <input class="input-class text" type="text" id="project-name"
+                                               name="project-name" value="{{ project.uuid }}"/><br>
+                                    </div>
+                                    <div class="desc">
+                                        <button class="btn" type="submit">SHARE</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <form class = "form-main-class" action="/exegesis/share_project/" method="post">
-                {% csrf_token %}
-                <div class="div-share">
-                  <input class="input-class text" type="text" id="email" name="email" placeholder="Email ID" required="" /><br>
-                </div>
-                <div class="div-share none">
-                  <input class="input-class text" type="text" id="project-name" name="project-name" value="{{ project.uuid }}" /><br>
-                </div>
-                <div class="desc">
-                  <button  class="btn" type="submit">SHARE</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
+        {% endfor %}
     {% endif %}
-  </div>
+</div>
 
-  <div class = "container div-upload">
-    <form class = "form-main-class" id='update-project' action="/exegesis/svg_images/" method="post" enctype="multipart/form-data">
-     {% csrf_token %}
-     <input class="input-class" type="file" id="svgfile" name="svgfile" multiple/>
-     <input type="text" id="project-uuid" name="project-uuid" value="">
-     <button  class="btn" type="submit">Upload</button>
-   </form>
- </div>
+<div class="container div-upload">
+    <form class="form-main-class" id='update-project' action="/exegesis/svg_images/" method="post"
+          enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="input-class" type="file" id="svgfile" name="svgfile" multiple/>
+        <input type="text" id="project-uuid" name="project-uuid" value="">
+        <button class="btn" type="submit">Upload</button>
+    </form>
+</div>
 
 </body>
 </html>

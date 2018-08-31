@@ -2,167 +2,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>eXegesis</title>
-  <link rel="stylesheet" type="text/css" href="{% static "paper.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
-  <script type="text/javascript" src="{% static "jquery_3_1_1.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "bootstrap_3_3_7.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "script.js" %}"></script>
+    <title>eXegesis</title>
+    <link rel="stylesheet" type="text/css" href="{% static "paper.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type="text/javascript" src="{% static "jquery_3_1_1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "bootstrap_3_3_7.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "script.js" %}"></script>
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid svg-nav">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/exegesis/projects">
-          <div class="logo"><img src="{% static "logo.png" %}"></div>
-          <div class="name">{{ project }}</div>
-        </a>
-      </div>   
-    </div>
-  </nav>
-
-  <div class="main-container">
-    <div class="container-fluid">
-      <div class="col-sm-3 head-left">
-        <div>
-          <div><strong>Type: {{ screen }}</strong></div>
-          <div>Density: {{ density }}</div>
-          <div>Created:  {{ created }}</div>
-          <div>Last Updated: {{ last_updated }} </div>
-        </div>
-        <div class="search-filter">
-          <a class="no-link" href="#" onclick="sortByName('sortName', 'sortUpdate');" id="sortName">Name</a> | <a class="no-link" href="#" onclick="sortByUpdate('sortUpdate', 'sortName');" id="sortUpdate">Last updated</a>
-        </div>
-      </div>   
-
-      <div class="col-sm-6 head-center">
-        <button id="dash" class="btn-dash" onclick="changeDash();">DASHBOARD</button>
-        <button id="style" class="btn-style" onclick="changeStyle();">STYLEGUIDE</button>
-      </div>
-
-      <div class="col-sm-3 head-right">
-        <div>
-          <div>
-            <input class="search-screen" type="text" id="search" placeholder="SEARCH SCREENS" onkeyup="search();">
-          </div>
-          <div class="search-icon">
-            <span class="glyphicon glyphicon-search"></span>
-          </div>
-        </div>
-
-        <div class="div-owner">
-          OWNER: <strong>{{ owner }}</strong>
-        </div>
-
-        <div class="div-share">
-          <div class="col-sm-6">
-            <div class="dropdown">
-              <button class="dropdown-toggle btn-members" type="button" data-toggle="dropdown">VIEW MEMBERS
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu" data-toggle="modal" data-target="#">
-                  {% if shared_members %}
-                  {% for member in shared_members %}
-                  <li><a href="#">{{ member.email }}</a></li>
-                  {% endfor %}
-                  {% endif %}
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 share-btn" data-toggle="modal" data-target="#myModal">
-              <button class="btn-share">SHARE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid arts" id="sorted-class">
-        {% if artboards %}
-        {% for artboard in artboards %}
-        {% if artboard.latest %}
-        <div class="col-md-3 art-outline" id="{{ artboard.name }}">
-          <div class="art-frame">
-            <a href='/exegesis/svg?url={{artboard.location}}'>
-              <div class="art-thumb" style="background-image:url(/exegesis/{{ artboard.location }});">
-                <div class="caption art-caption">
-                  <div>
-                    <button class="btn art-name">{{ artboard.name }}</button>
-                  </div>
-                </div>
-              </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/exegesis/projects">
+                <div class="logo"><img src="{% static "logo.png" %}"></div>
+                <div class="name">{{ project }}</div>
             </a>
+        </div>
+    </div>
+</nav>
 
-            <div class="dropdown art-drop">
-              <button class="btn dropdown-toggle btn-art-drop" type="button" data-toggle="dropdown">
-                <span class="glyphicon glyphicon-cog cog-style-art">
-                </span>
-              </button>
-              <ul class="dropdown-menu art-drop-menu">                   
-                <li class="li-drop"> <a href="#" data-toggle="modal" data-target="#{{ artboard.uuid }}">RENAME</a></li>
-                <li class="li-drop"><a href="#" onclick="updateArtboard('{{ artboard.uuid }}');">UPDATE</a></li>
-                <li class="li-drop"><a href="/exegesis/download_artboard?artboard={{ artboard.location }}">DOWNLOAD</a></li>
-                <li class="li-drop"><a href="/exegesis/delete_artboard?artboard={{ artboard.location }}">DELETE</a></li>
-              </ul>  
+<div class="main-container">
+    <div class="container-fluid">
+        <div class="col-sm-3 head-left">
+            <div>
+                <div><strong>Type: {{ screen }}</strong></div>
+                <div>Density: {{ density }}</div>
+                <div>Created: {{ created }}</div>
+                <div>Last Updated: {{ last_updated }} </div>
             </div>
-          </div>
+            <div class="search-filter">
+                <a class="no-link" href="#" onclick="sortByName('sortName', 'sortUpdate');" id="sortName">Name</a> | <a
+                    class="no-link" href="#" onclick="sortByUpdate('sortUpdate', 'sortName');" id="sortUpdate">Last
+                updated</a>
+            </div>
+        </div>
 
-          <div class="modal fade" id="{{ artboard.uuid }}" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
+        <div class="col-sm-6 head-center">
+            <button id="dash" class="btn-dash" onclick="changeDash();">DASHBOARD</button>
+            <button id="style" class="btn-style" onclick="changeStyle();">STYLEGUIDE</button>
+        </div>
+
+        <div class="col-sm-3 head-right">
+            <div>
+                <div>
+                    <input class="search-screen" type="text" id="search" placeholder="SEARCH SCREENS"
+                           onkeyup="search();">
+                </div>
+                <div class="search-icon">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+
+            <div class="div-owner">
+                OWNER: <strong>{{ owner }}</strong>
+            </div>
+
+            <div class="div-share">
+                <div class="col-sm-6">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle btn-members" type="button" data-toggle="dropdown">VIEW MEMBERS
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu" data-toggle="modal" data-target="#">
+                            {% if shared_members %}
+                                {% for member in shared_members %}
+                                    <li><a href="#">{{ member.email }}</a></li>
+                                {% endfor %}
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 share-btn" data-toggle="modal" data-target="#myModal">
+                    <button class="btn-share">SHARE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid arts" id="sorted-class">
+        {% if artboards %}
+            {% for artboard in artboards %}
+                {% if artboard.latest %}
+                    <div class="col-md-3 art-outline" id="{{ artboard.name }}">
+                        <div class="art-frame">
+                            <a href='/exegesis/svg?url={{ artboard.location }}'>
+                                <div class="art-thumb" style="background-image:url(/exegesis/{{ artboard.location }});">
+                                    <div class="caption art-caption">
+                                        <div>
+                                            <button class="btn art-name">{{ artboard.name }}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="dropdown art-drop">
+                                <button class="btn dropdown-toggle btn-art-drop" type="button" data-toggle="dropdown">
+                                    <i class="fas fa-cog cog-style"></i>
+                                </button>
+                                <ul class="dropdown-menu art-drop-menu">
+                                    <li class="li-drop"><a href="#" data-toggle="modal"
+                                                           data-target="#{{ artboard.uuid }}">RENAME</a></li>
+                                    <li class="li-drop"><a href="#" onclick="updateArtboard('{{ artboard.uuid }}');">UPDATE</a>
+                                    </li>
+                                    <li class="li-drop"><a
+                                            href="/exegesis/download_artboard?artboard={{ artboard.location }}">DOWNLOAD</a>
+                                    </li>
+                                    <li class="li-drop"><a
+                                            href="/exegesis/delete_artboard?artboard={{ artboard.location }}">DELETE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="{{ artboard.uuid }}" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Rename Artboard</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-main-class" action="/exegesis/rename_artboard/" method="post">
+                                            {% csrf_token %}
+                                            <input class="input-class text" type="text" id="new-name" name="new-name"
+                                                   placeholder="New name" required/><br>
+                                            <input class="input-class art-loc" type="text" id="artboard" name="artboard"
+                                                   value="{{ artboard.uuid }}"/><br>
+                                            <button class="btn" type="submit">CHANGE</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Rename Artboard</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Choose Sharing options</h4>
                 </div>
                 <div class="modal-body">
-                  <form class = "form-main-class" action="/exegesis/rename_artboard/" method="post">
-                    {% csrf_token %}
-                    <input class="input-class text" type="text" id="new-name" name="new-name" placeholder="New name" required /><br>
-                    <input class="input-class art-loc" type="text" id="artboard" name="artboard" value="{{ artboard.uuid }}"/><br>
-                    <button  class="btn" type="submit">CHANGE</button>
-                  </form>
+                    <form class="form-main-class" action="/exegesis/share_project/" method="post">
+                        {% csrf_token %}
+                        <div class="div-share">
+                            <input class="input-class text" type="text" id="email" name="email" placeholder="Email ID"
+                                   required/><br>
+                        </div>
+                        <div class="desc">
+                            <button class="btn" type="submit">SHARE</button>
+                        </div>
+                    </form>
                 </div>
-              </div>
             </div>
-          </div>
-
         </div>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-      </div>
+    </div>
 
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Choose Sharing options</h4>
-            </div>
-            <div class="modal-body">
-              <form class = "form-main-class" action="/exegesis/share_project/" method="post">
-                {% csrf_token %}
-                <div class="div-share">
-                  <input class="input-class text" type="text" id="email" name="email" placeholder="Email ID" required /><br>
-                </div>
-                <div class="desc">
-                  <button  class="btn" type="submit">SHARE</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container art-update">
+        <form class="form-main-class" id='update-artboard' action="/exegesis/update_artboard/" method="post"
+              enctype="multipart/form-data">
+            {% csrf_token %}
+            <input class="input-class" type="file" id="svgfile" name="svgfile"/>
+            <input type="text" id="artboard-uuid" name="artboard-uuid" value="">
+            <button class="btn" type="submit">Upload</button>
+        </form>
+    </div>
+</div>
 
-      <div class = "container art-update">
-        <form class = "form-main-class" id='update-artboard' action="/exegesis/update_artboard/" method="post" enctype="multipart/form-data">
-         {% csrf_token %}
-         <input class="input-class" type="file" id="svgfile" name="svgfile"/>
-         <input type="text" id="artboard-uuid" name="artboard-uuid" value="">
-         <button  class="btn" type="submit">Upload</button>
-       </form>
-     </div>
-   </div>
-
- </body>
- </html>
+</body>
+</html>

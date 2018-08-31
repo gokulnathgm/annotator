@@ -5,6 +5,8 @@
   <title>eXegesis</title>
   <link rel="stylesheet" type="text/css" href="{% static "paper.css" %}">
   <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script type="text/javascript" src="{% static "jquery_3_1_1.min.js" %}"></script>
   <script type="text/javascript" src="{% static "bootstrap_3_3_7.min.js" %}"></script>
 </head>
@@ -24,7 +26,7 @@
   <div >
     <div class="container-fluid div-share">
       <div class="col-sm-3 head-index">
-        <span class="glyphicon glyphicon-chevron-left back-link"></span><a class="no-link" href="/exegesis/artboards">Back to Dashboard</a>
+        <i class="fas fa-angle-left back-link"></i><a class="no-link" href="/exegesis/artboards">Back to Dashboard</a>
       </div>
       <div class="col-sm-6 head-index">
         <strong>{{ artboard }}</strong>
