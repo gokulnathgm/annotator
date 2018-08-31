@@ -2,7 +2,7 @@
 
 A web app which annotates the SVG files exported from the Sketch app.
 
-# How to install?
+### How to install?
 
   - Clone this repo
   - Install the PIP packages
